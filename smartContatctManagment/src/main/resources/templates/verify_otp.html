@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<section>
+		<div class="d-flex align-items-center light-blue-gradient"
+			style="height: 100vh;">
+			<div class="container">
+				<div class="d-flex justify-content-center">
+					<div class="col-md-7">
+						<div class="card rounded-0 shadow">
+							<div class="card-body">
+								<div class="alert alert-success" role="alert">we have
+									successfully send otp to your email</div>
+								<form method="post" action="" th:action="@{/send-otp}">
+									<div class="form-group">
+										<label for="exampleInputEmail1">Enter OPT</label> <input
+											name="otp" type="number" class="form-control"
+											id="exampleInputEmail1" aria-describedby="emailHelp"
+											placeholder="Enter OTP here">
+									</div>
+									<div class="container text-center my-3">
+										<button type="submit" class="btn btn-success">Verify
+											</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+
+</body>
+</html>
